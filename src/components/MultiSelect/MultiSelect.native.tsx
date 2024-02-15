@@ -94,10 +94,10 @@ const SelectOption = (props: SelectOptionInterface) => {
       outlined
       style={style}
       onPress={onPress}
-      spacedR
-      padded
+      marginR
+      padding2x
       rounded
-      spacedB
+      marginB
       row
       centerH
       {...containerProps}

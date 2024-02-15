@@ -76,7 +76,7 @@ export default function InputContainer({
         return (
           <View {...(props.containerProps || {})}>
             {label ? (
-              <Text label spacedB {...props}>
+              <Text label marginB {...props}>
                 {label}
               </Text>
             ) : undefined}

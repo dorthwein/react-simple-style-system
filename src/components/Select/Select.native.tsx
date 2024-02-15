@@ -47,7 +47,11 @@ const Select = ({allowUndefined = true, ...props}: SelectInterface) => {
 
   return (
     <View row flexWrap {...props}>
-      {props.loading ? <ActivityIndicator centerSelf marginR /> : options}
+      {props.loading ? (
+        <ActivityIndicator centerSelf marginR marginV />
+      ) : (
+        options
+      )}
     </View>
   );
 };
@@ -84,10 +88,10 @@ const SelectOption = (props: SelectOptionInterface) => {
     <Pressable
       style={style}
       onPress={onPress}
-      spacedR
-      padded
+      marginR
+      padding2x
       rounded
-      spacedB
+      marginB
       disabled={disabled}
       row
       centerH

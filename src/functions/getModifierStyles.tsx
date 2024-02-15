@@ -1,20 +1,21 @@
-import ThemeInterface from "../types/ThemeInterface"
+import ThemeInterface from '../types/ThemeInterface';
 
 const getModifierStyles = (theme: ThemeInterface) => {
-  const {sizes, colors} = theme
+  const {sizes, colors} = theme;
   const styles: any = {
-    h1: { fontSize: sizes.h1 },
-    h2: { fontSize: sizes.h2 },
-    h3: { fontSize: sizes.h3 },
-    body: { fontSize: sizes.body },
-    caption: { fontSize: sizes.caption },
-    label: { fontSize: sizes.label, fontWeight: "bold" },
+    h1: {fontSize: sizes.h1},
+    h2: {fontSize: sizes.h2},
+    h3: {fontSize: sizes.h3},
+    body: {fontSize: sizes.body},
+    caption: {fontSize: sizes.caption},
+    label: {fontSize: sizes.label, fontWeight: 'bold'},
 
     textShadow: {
-      textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+      textShadow:
+        '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000',
     },
 
-    rounded: { borderRadius: sizes.roundedRadius },
+    rounded: {borderRadius: sizes.roundedRadius},
     roundedT: {
       borderTopRightRadius: sizes.roundedRadius,
       borderTopLeftRadius: sizes.roundedRadius,
@@ -35,185 +36,205 @@ const getModifierStyles = (theme: ThemeInterface) => {
     outlined: {
       borderWidth: sizes.hairline,
       borderColor: colors.outline,
-      borderStyle: "solid",
+      borderStyle: 'solid',
     },
     outlinedT: {
       borderTopWidth: sizes.hairline,
       borderTopColor: colors.outline,
-      borderStyle: "solid",
+      borderStyle: 'solid',
     },
     outlinedB: {
       borderBottomWidth: sizes.hairline,
       borderBottomColor: colors.outline,
-      borderStyle: "solid",
+      borderStyle: 'solid',
     },
     outlinedR: {
       borderRightWidth: sizes.hairline,
       borderRightColor: colors.outline,
-      borderStyle: "solid",
+      borderStyle: 'solid',
     },
     outlinedL: {
       borderLeftWidth: sizes.hairline,
       borderLeftColor: colors.outline,
-      borderStyle: "solid",
+      borderStyle: 'solid',
     },
 
-    thin: { fontWeight: 300 },
-    bold: { fontWeight: 700 },
-    italic: { fontStyle: "italic" },
-    lineThrough: { textDecorationLine: "line-through" },
+    thin: {fontWeight: 300},
+    bold: {fontWeight: 700},
+    italic: {fontStyle: 'italic'},
+    lineThrough: {textDecorationLine: 'line-through'},
 
-    paddedUnit: { padding: sizes.unit },
-    paddedUnitT: { paddingTop: sizes.unit },
-    paddedUnitB: { paddingBottom: sizes.unit },
-    paddedUnitR: { paddingRight: sizes.unit },
-    paddedUnitL: { paddingLeft: sizes.unit },
-    paddedUnitV: { paddingTop: sizes.unit, paddingBottom: sizes.unit },
-    paddedUnitH: { paddingRight: sizes.unit, paddingLeft: sizes.unit },
+    padding: {padding: sizes.unit},
+    paddingT: {paddingTop: sizes.unit},
+    paddingB: {paddingBottom: sizes.unit},
+    paddingR: {paddingRight: sizes.unit},
+    paddingL: {paddingLeft: sizes.unit},
+    paddingV: {paddingTop: sizes.unit, paddingBottom: sizes.unit},
+    paddingH: {paddingRight: sizes.unit, paddingLeft: sizes.unit},
 
-    padded: { padding: sizes.unit * 2 },
-    paddedT: { paddingTop: sizes.unit * 2 },
-    paddedB: { paddingBottom: sizes.unit * 2 },
-    paddedR: { paddingRight: sizes.unit * 2 },
-    paddedL: { paddingLeft: sizes.unit * 2 },
-    paddedV: { paddingTop: sizes.unit * 2, paddingBottom: sizes.unit * 2 },
-    paddedH: { paddingRight: sizes.unit * 2, paddingLeft: sizes.unit * 2 },
+    padding2x: {padding: sizes.unit * 2},
+    paddingT2x: {paddingTop: sizes.unit * 2},
+    paddingB2x: {paddingBottom: sizes.unit * 2},
+    paddingR2x: {paddingRight: sizes.unit * 2},
+    paddingL2x: {paddingLeft: sizes.unit * 2},
+    paddingV2x: {paddingTop: sizes.unit * 2, paddingBottom: sizes.unit * 2},
+    paddingH2x: {paddingRight: sizes.unit * 2, paddingLeft: sizes.unit * 2},
 
-    padded2x: { padding: sizes.unit * 4 },
-    paddedV2x: { paddingTop: sizes.unit * 4, paddingBottom: sizes.unit * 4 },
-    paddedH2x: { paddingRight: sizes.unit * 4, paddingLeft: sizes.unit * 4 },
+    padding3x: {padding: sizes.unit * 3},
+    paddingT3x: {paddingTop: sizes.unit * 3},
+    paddingB3x: {paddingBottom: sizes.unit * 3},
+    paddingR3x: {paddingRight: sizes.unit * 3},
+    paddingL3x: {paddingLeft: sizes.unit * 3},
+    paddingV3x: {paddingTop: sizes.unit * 3, paddingBottom: sizes.unit * 3},
+    paddingH3x: {paddingRight: sizes.unit * 3, paddingLeft: sizes.unit * 3},
 
-    spaced: { margin: sizes.unit },
-    spacedT: { marginTop: sizes.unit },
-    spacedB: { marginBottom: sizes.unit },
-    spacedR: { marginRight: sizes.unit },
-    spacedL: { marginLeft: sizes.unit },
-    spacedH: { marginRight: sizes.unit, marginLeft: sizes.unit },
-    spacedV: { marginTop: sizes.unit, marginBottom: sizes.unit },
+    padding4x: {padding: sizes.unit * 4},
+    paddingT4x: {paddingTop: sizes.unit * 4},
+    paddingB4x: {paddingBottom: sizes.unit * 4},
+    paddingR4x: {paddingRight: sizes.unit * 4},
+    paddingL4x: {paddingLeft: sizes.unit * 4},
+    paddingV4x: {paddingTop: sizes.unit * 4, paddingBottom: sizes.unit * 4},
+    paddingH4x: {paddingRight: sizes.unit * 4, paddingLeft: sizes.unit * 4},
 
-    margin: { margin: sizes.unit * 2 },
-    marginV: { marginTop: sizes.unit * 2, marginBottom: sizes.unit * 2 },
-    marginH: { marginRight: sizes.unit * 2, marginLeft: sizes.unit * 2 },
-    marginT: { marginTop: sizes.unit * 2 },
-    marginB: { marginBottom: sizes.unit * 2 },
-    marginR: { marginRight: sizes.unit * 2 },
-    marginL: { marginLeft: sizes.unit * 2 },
+    margin: {margin: sizes.unit},
+    marginT: {marginTop: sizes.unit},
+    marginB: {marginBottom: sizes.unit},
+    marginR: {marginRight: sizes.unit},
+    marginL: {marginLeft: sizes.unit},
+    marginH: {marginRight: sizes.unit, marginLeft: sizes.unit},
+    marginV: {marginTop: sizes.unit, marginBottom: sizes.unit},
 
-    margin2x: { margin: sizes.unit * 4 },
-    marginV2x: { marginTop: sizes.unit * 4, marginBottom: sizes.unit * 4 },
-    marginH2x: { marginRight: sizes.unit * 4, marginLeft: sizes.unit * 4 },
-    marginT2x: { marginTop: sizes.unit * 4 },
-    marginB2x: { marginBottom: sizes.unit * 4 },
-    marginR2x: { marginRight: sizes.unit * 4 },
-    marginL2x: { marginLeft: sizes.unit * 4 },
+    margin2x: {margin: sizes.unit * 2},
+    marginV2x: {marginTop: sizes.unit * 2, marginBottom: sizes.unit * 2},
+    marginH2x: {marginRight: sizes.unit * 2, marginLeft: sizes.unit * 2},
+    marginT2x: {marginTop: sizes.unit * 2},
+    marginB2x: {marginBottom: sizes.unit * 2},
+    marginR2x: {marginRight: sizes.unit * 2},
+    marginL2x: {marginLeft: sizes.unit * 2},
 
-    row: { flexDirection: "row" },
-    rowReverse: { flexDirection: "row-reverse" },
-    column: { flexDirection: "column" },
+    margin3x: {margin: sizes.unit * 3},
+    marginV3x: {marginTop: sizes.unit * 3, marginBottom: sizes.unit * 3},
+    marginH3x: {marginRight: sizes.unit * 3, marginLeft: sizes.unit * 3},
+    marginT3x: {marginTop: sizes.unit * 3},
+    marginB3x: {marginBottom: sizes.unit * 3},
+    marginR3x: {marginRight: sizes.unit * 3},
+    marginL3x: {marginLeft: sizes.unit * 3},
 
-    width100: { width: "100%" },
+    margin4x: {margin: sizes.unit * 4},
+    marginV4x: {marginTop: sizes.unit * 4, marginBottom: sizes.unit * 4},
+    marginH4x: {marginRight: sizes.unit * 4, marginLeft: sizes.unit * 4},
+    marginT4x: {marginTop: sizes.unit * 4},
+    marginB4x: {marginBottom: sizes.unit * 4},
+    marginR4x: {marginRight: sizes.unit * 4},
+    marginL4x: {marginLeft: sizes.unit * 4},
 
-    flex: { flex: 1 },
-    flex2: { flex: 2 },
-    flex3: { flex: 3 },
-    flex4: { flex: 4 },
-    flex5: { flex: 5 },
+    row: {flexDirection: 'row'},
+    rowReverse: {flexDirection: 'row-reverse'},
+    column: {flexDirection: 'column'},
 
-    spaceEvenly: { alignItems: "space-evenly", justifyContent: "space-evenly" },
-    center: { justifyContent: "center", alignItems: "center" },
-    centerV: { justifyContent: "center" },
-    centerH: { alignItems: "center" },
+    width100: {width: '100%'},
+
+    flex: {flex: 1},
+    flex2: {flex: 2},
+    flex3: {flex: 3},
+    flex4: {flex: 4},
+    flex5: {flex: 5},
+
+    spaceEvenly: {alignItems: 'space-evenly', justifyContent: 'space-evenly'},
+    center: {justifyContent: 'center', alignItems: 'center'},
+    centerV: {justifyContent: 'center'},
+    centerH: {alignItems: 'center'},
 
     elevated: {
-      boxShadow: "0px 2px 4px 0px #000",
-      shadowColor: "rgba(0, 0, 0, 0.55)",
+      boxShadow: '0px 2px 4px 0px #000',
+      shadowColor: 'rgba(0, 0, 0, 0.55)',
 
-      shadowOffset: { width: 0, height: 2 },
+      shadowOffset: {width: 0, height: 2},
       shadowRadius: 3,
-      shadowOpacity: 0.25,      
+      shadowOpacity: 0.25,
     },
 
-    textCenter: { textAlign: "center" },
-    textLeft: { textAlign: "left" },
-    textRight: { textAlign: "right" },
+    textCenter: {textAlign: 'center'},
+    textLeft: {textAlign: 'left'},
+    textRight: {textAlign: 'right'},
 
-    right: { alignSelf: "flex-end" },
-    left: { alignSelf: "flex-start" },
-    centerSelf: { alignSelf: "center" },
+    right: {alignSelf: 'flex-end'},
+    left: {alignSelf: 'flex-start'},
+    centerSelf: {alignSelf: 'center'},
 
-    rightAlign: { alignItems: "flex-end" },
-    leftAlign: { alignItems: "flex-start" },
+    rightAlign: {alignItems: 'flex-end'},
+    leftAlign: {alignItems: 'flex-start'},
 
-    top: { justifyContent: "flex-start" },
-    bottom: { justifyContent: "flex-end" },
-    topAlign: { alignItems: "flex-start" },
-    bottomAlign: { alignItems: "flex-end" },
-    flexWrap: { flexWrap: "wrap" },
-    
-    transparent: { backgroundColor: 'transparent'},
+    top: {justifyContent: 'flex-start'},
+    bottom: {justifyContent: 'flex-end'},
+    topAlign: {alignItems: 'flex-start'},
+    bottomAlign: {alignItems: 'flex-end'},
+    flexWrap: {flexWrap: 'wrap'},
 
-    primary: { backgroundColor: colors.primary },
-    primaryContainer: { backgroundColor: colors.primaryContainer },
+    transparent: {backgroundColor: 'transparent'},
 
-    secondary: { backgroundColor: colors.secondary },
-    secondaryContainer: { backgroundColor: colors.secondaryContainer },
+    primary: {backgroundColor: colors.primary},
+    primaryContainer: {backgroundColor: colors.primaryContainer},
 
-    tertiary: { backgroundColor: colors.tertiary },
-    tertiaryContainer: { backgroundColor: colors.tertiaryContainer },
+    secondary: {backgroundColor: colors.secondary},
+    secondaryContainer: {backgroundColor: colors.secondaryContainer},
 
-    danger: { backgroundColor: colors.danger },
-    dangerContainer: { backgroundColor: colors.dangerContainer },
+    tertiary: {backgroundColor: colors.tertiary},
+    tertiaryContainer: {backgroundColor: colors.tertiaryContainer},
 
-    warning: { backgroundColor: colors.warning },
-    warningContainer: { backgroundColor: colors.warningContainer },
+    danger: {backgroundColor: colors.danger},
+    dangerContainer: {backgroundColor: colors.dangerContainer},
 
-    success: { backgroundColor: colors.success },
-    successContainer: { backgroundColor: colors.successContainer },
+    warning: {backgroundColor: colors.warning},
+    warningContainer: {backgroundColor: colors.warningContainer},
 
-    disabled: { backgroundColor: colors.disabled },
-    disabledContainer: { backgroundColor: colors.disabledContainer },
+    success: {backgroundColor: colors.success},
+    successContainer: {backgroundColor: colors.successContainer},
 
-    info: { backgroundColor: colors.info },
-    infoContainer: { backgroundColor: colors.infoContainer },
+    disabled: {backgroundColor: colors.disabled},
+    disabledContainer: {backgroundColor: colors.disabledContainer},
 
-    surface: { backgroundColor: colors.surface },
-    surfaceVariant: { backgroundColor: colors.surfaceVariant },
+    info: {backgroundColor: colors.info},
+    infoContainer: {backgroundColor: colors.infoContainer},
 
-    background: { backgroundColor: colors.background },
-    backgroundContainer: { backgroundColor: colors.backgroundContainer },
+    surface: {backgroundColor: colors.surface},
+    surfaceVariant: {backgroundColor: colors.surfaceVariant},
 
-    onPrimary: { color: colors.onPrimary },
-    onPrimaryContainer: { color: colors.onPrimaryContainer },
+    background: {backgroundColor: colors.background},
+    backgroundContainer: {backgroundColor: colors.backgroundContainer},
 
-    onSecondary: { color: colors.onSecondary },
-    onSecondaryContainer: { color: colors.onSecondaryContainer },
+    onPrimary: {color: colors.onPrimary},
+    onPrimaryContainer: {color: colors.onPrimaryContainer},
 
-    onTertiary: { color: colors.onTertiary },
-    onTertiaryContainer: { color: colors.onTertiaryContainer },
+    onSecondary: {color: colors.onSecondary},
+    onSecondaryContainer: {color: colors.onSecondaryContainer},
 
-    onDanger: { color: colors.onDanger },
-    onDangerContainer: { color: colors.onDangerContainer },
+    onTertiary: {color: colors.onTertiary},
+    onTertiaryContainer: {color: colors.onTertiaryContainer},
 
-    onWarning: { color: colors.onWarning },
-    onWarningContainer: { color: colors.onWarningContainer },
+    onDanger: {color: colors.onDanger},
+    onDangerContainer: {color: colors.onDangerContainer},
 
-    onSuccess: { color: colors.onSuccess },
-    onSuccessContainer: { color: colors.onSuccessContainer },
+    onWarning: {color: colors.onWarning},
+    onWarningContainer: {color: colors.onWarningContainer},
 
-    onDisabled: { color: colors.onDisabled },
-    onDisabledContainer: { color: colors.onDisabledContainer },
+    onSuccess: {color: colors.onSuccess},
+    onSuccessContainer: {color: colors.onSuccessContainer},
 
-    onInfo: { color: colors.onInfo },
-    onInfoContainer: { color: colors.onInfoContainer },
+    onDisabled: {color: colors.onDisabled},
+    onDisabledContainer: {color: colors.onDisabledContainer},
 
-    onSurface: { color: colors.onSurface },
-    onsurfaceVariant: { color: colors.onSurfaceVariant },
-    
-    onBackground: { color: colors.onBackground },
-    onBackgroundContainer: { color: colors.onBackgroundContainer },  
-  }
+    onInfo: {color: colors.onInfo},
+    onInfoContainer: {color: colors.onInfoContainer},
 
-  return styles
-}
+    onSurface: {color: colors.onSurface},
+    onSurfaceVariant: {color: colors.onSurfaceVariant},
 
-export default getModifierStyles
+    onBackground: {color: colors.onBackground},
+    onBackgroundContainer: {color: colors.onBackgroundContainer},
+  };
+
+  return styles;
+};
+
+export default getModifierStyles;

@@ -10,7 +10,7 @@ export interface ErrorInterface extends StyleModifiersInterface {
 const Error = ({error, ...props}: ErrorInterface) => {
   if (error) {
     return (
-      <View padded rounded danger marginB>
+      <View padding rounded danger marginB>
         <Text body onDanger {...props}>
           {error.message ? error.message : ''}
           {error.type === 'required' ? '*This field is required' : ''}

@@ -1,5 +1,6 @@
-import React from 'react'
-export default interface StyleModifiersInterface extends React.PropsWithChildren {
+import React from 'react';
+export default interface StyleModifiersInterface
+  extends React.PropsWithChildren {
   [key: string]:
     | string
     | React.ReactNode
@@ -31,39 +32,46 @@ export default interface StyleModifiersInterface extends React.PropsWithChildren
   italic?: boolean;
   lineThrough?: boolean;
 
-  paddedUnit?: boolean;
-  paddedUnitT?: boolean;
-  paddedUnitB?: boolean;
-  paddedUnitR?: boolean;
-  paddedUnitL?: boolean;
-  paddedUnitV?: boolean;
-  paddedUnitH?: boolean;
+  padding?: boolean;
+  paddingT?: boolean;
+  paddingB?: boolean;
+  paddingR?: boolean;
+  paddingL?: boolean;
+  paddingV?: boolean;
+  paddingH?: boolean;
 
-  padded?: boolean;
-  paddedT?: boolean;
-  paddedB?: boolean;
-  paddedR?: boolean;
-  paddedL?: boolean;
-  paddedV?: boolean;
-  paddedH?: boolean;
-  padded2x?: boolean;
-  paddedV2x?: boolean;
-  paddedH2x?: boolean;
+  padding2x?: boolean;
+  paddingT2x?: boolean;
+  paddingB2x?: boolean;
+  paddingR2x?: boolean;
+  paddingL2x?: boolean;
+  paddingV2x?: boolean;
+  paddingH2x?: boolean;
 
-  spaced?: boolean;
-  spacedT?: boolean;
-  spacedB?: boolean;
-  spacedR?: boolean;
-  spacedL?: boolean;
-  spacedH?: boolean;
-  spacedV?: boolean;
+  padding3x?: boolean;
+  paddingT3x?: boolean;
+  paddingB3x?: boolean;
+  paddingR3x?: boolean;
+  paddingL3x?: boolean;
+  paddingV3x?: boolean;
+  paddingH3x?: boolean;
+
+  padding4x?: boolean;
+  paddingT4x?: boolean;
+  paddingB4x?: boolean;
+  paddingR4x?: boolean;
+  paddingL4x?: boolean;
+  paddingV4x?: boolean;
+  paddingH4x?: boolean;
+
   margin?: boolean;
-  marginV?: boolean;
-  marginH?: boolean;
   marginT?: boolean;
   marginB?: boolean;
   marginR?: boolean;
   marginL?: boolean;
+  marginH?: boolean;
+  marginV?: boolean;
+
   margin2x?: boolean;
   marginV2x?: boolean;
   marginH2x?: boolean;
@@ -71,6 +79,22 @@ export default interface StyleModifiersInterface extends React.PropsWithChildren
   marginB2x?: boolean;
   marginR2x?: boolean;
   marginL2x?: boolean;
+
+  margin3x?: boolean;
+  marginV3x?: boolean;
+  marginH3x?: boolean;
+  marginT3x?: boolean;
+  marginB3x?: boolean;
+  marginR3x?: boolean;
+  marginL3x?: boolean;
+
+  margin4x?: boolean;
+  marginV4x?: boolean;
+  marginH4x?: boolean;
+  marginT4x?: boolean;
+  marginB4x?: boolean;
+  marginR4x?: boolean;
+  marginL4x?: boolean;
 
   row?: boolean;
   rowReverse?: boolean;
