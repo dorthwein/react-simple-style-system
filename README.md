@@ -20,29 +20,29 @@ import {ThemeContainer, themes, View, Text} from 'react-simple-style-system';
 
 const App = () => {
   /* 
-	Select a theme - this package comes with a light and dark theme.  
-	See theming section on defining your own therme
+    Select a theme - this package comes with a light and dark theme.  
+    See theming section on defining your own therme
   */
   const theme = themes.Light;
-	
+
   return (
     <ThemeContainer theme={theme}>
       {/* Create a View with flex 1 and background using theme's background color */}
-		<View flex background>
+      <View flex background>
 
-		  {/* Create a card like view with padding and margin */}
-		  <View rounded margin padding surface elevated>
-	
+        {/* Create a card like view with padding and margin */}
+        <View rounded margin padding surface elevated>
+
           {/* Add a title and text to the card with correct text color */}
           <Text h1 onSurface>
-	         Title
+            Title
           </Text>
           <Text body onSurface>
-	         A brief description of something
+            A brief description of something
           </Text>
-		  </View>				
-		</View>
-     </ThemeContainer>
+        </View>				
+      </View>
+    </ThemeContainer>
   )
 }
 ```
