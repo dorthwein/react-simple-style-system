@@ -1,0 +1,106 @@
+{
+  "name": "react-simple-style-system",
+  "version": "0.0.3-development",
+  "description": "An extensible simple prop based style system for react/react-native",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "node": "./lib/index.js",
+      "import": "./lib/index.js",
+      "default": "./lib/index.js"
+    }
+  },
+  "files": [
+    "./lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "build-watch": "tsc --project tsconfig.build.json --watch",
+    "clean": "rm -rf ./lib/",
+    "cm": "cz",
+    "lint": "eslint ./src/ --fix",
+    "semantic-release": "semantic-release",
+    "test:watch": "jest --watch",
+    "test": "jest --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Orthwein",
+    "email": "dorthwein@users.noreply.github.com",
+    "url": "https://github.com/dorthwein"
+  },
+  "engines": {
+    "node": ">=12.0"
+  },
+  "keywords": [
+    "themes",
+    "styles",
+    "react",
+    "react-native"
+  ],
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^12.20.11",
+    "@types/react": "^18.2.55",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.2.0",
+    "lint-staged": "^13.2.1",
+    "prettier": "^2.2.1",
+    "semantic-release": "^21.0.1",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.2.4"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --cache-location .eslintcache --fix"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalcommits",
+          "presetConfig": {
+            "types": [
+              {
+                "type": "feat",
+                "section": "Features"
+              },
+              {
+                "type": "fix",
+                "section": "Bug Fixes"
+              },
+              {
+                "type": "build",
+                "section": "Dependencies and Other Build Updates",
+                "hidden": false
+              }
+            ]
+          }
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  }
+}
