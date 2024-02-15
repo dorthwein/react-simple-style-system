@@ -207,7 +207,7 @@ const getModifierStyles = (theme: ThemeInterface) => {
     onInfoContainer: { color: colors.onInfoContainer },
 
     onSurface: { color: colors.onSurface },
-    onsurfaceVariant: { color: colors.onsurfaceVariant },
+    onsurfaceVariant: { color: colors.onSurfaceVariant },
     
     onBackground: { color: colors.onBackground },
     onBackgroundContainer: { color: colors.onBackgroundContainer },  
