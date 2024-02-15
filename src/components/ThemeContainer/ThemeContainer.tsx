@@ -1,8 +1,8 @@
 import React from 'react';
-import Light from '../themes/Light';
-import ThemeInterface from '../types/ThemeInterface';
-import getModifierStyles from '../functions/getModifierStyles';
-import { ThemeProvider } from '../contexts/ThemeContext'; 
+import Light from '../../themes/Light';
+import ThemeInterface from '../../types/ThemeInterface';
+import getModifierStyles from '../../functions/getModifierStyles';
+import { ThemeProvider } from '../../contexts/ThemeContext'; 
 
 // export const ThemeContext = React.createContext<ThemeInterface>(Light);
 // export const ThemeProvider = ThemeContext.Provider;

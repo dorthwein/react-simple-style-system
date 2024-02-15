@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import {ThemeContext} from '../contexts/ThemeContext';
-
 
 const useStyleModifiers = (props: any) => {  
   const {styles}: any = React.useContext(ThemeContext);
@@ -14,7 +13,8 @@ const useStyleModifiers = (props: any) => {
     });
   }
 
-  return {...result, ...(props.style || {})};
+  const style =  useMemo(() => ({...result, ...(props.style || {})}), [props])
+  return style
 };
 
 export default useStyleModifiers;
