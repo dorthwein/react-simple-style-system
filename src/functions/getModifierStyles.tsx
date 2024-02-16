@@ -131,6 +131,7 @@ const getModifierStyles = (theme: ThemeInterface) => {
     row: {flexDirection: 'row'},
     rowReverse: {flexDirection: 'row-reverse'},
     column: {flexDirection: 'column'},
+    columnReverse: {flexDirection: 'column-reverse'},
 
     width100: {width: '100%'},
 
@@ -201,7 +202,6 @@ const getModifierStyles = (theme: ThemeInterface) => {
     surfaceVariant: {backgroundColor: colors.surfaceVariant},
 
     background: {backgroundColor: colors.background},
-    backgroundContainer: {backgroundColor: colors.backgroundContainer},
 
     onPrimary: {color: colors.onPrimary},
     onPrimaryContainer: {color: colors.onPrimaryContainer},
@@ -231,7 +231,6 @@ const getModifierStyles = (theme: ThemeInterface) => {
     onSurfaceVariant: {color: colors.onSurfaceVariant},
 
     onBackground: {color: colors.onBackground},
-    onBackgroundContainer: {color: colors.onBackgroundContainer},
   };
 
   return styles;

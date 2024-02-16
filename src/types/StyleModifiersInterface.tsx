@@ -99,6 +99,7 @@ export default interface StyleModifiersInterface
   row?: boolean;
   rowReverse?: boolean;
   column?: boolean;
+  columnReverse?: boolean;
 
   width100?: boolean;
   flex?: boolean;

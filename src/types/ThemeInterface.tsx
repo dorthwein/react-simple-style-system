@@ -1,10 +1,10 @@
 export default interface ThemeInterface {
   mode: string;
-  styles?: any;  
+  styles?: any;
   modifier?: Function;
   sizes: {
-    unit:  number;
-    roundedRadius:  number;
+    unit: number;
+    roundedRadius: number;
     hairline: number;
     h1: number;
     h2: number;
@@ -14,31 +14,31 @@ export default interface ThemeInterface {
     label: number;
   };
   colors: {
-    transparent: string;
     primary: string;
-    onPrimary: string;
     primaryContainer: string;
-    onPrimaryContainer: string;
     secondary: string;
-    onSecondary: string;
     secondaryContainer: string;
-    onSecondaryContainer: string;
     tertiary: string;
-    onTertiary: string;
     tertiaryContainer: string;
-    onTertiaryContainer: string;
-    background: string;
-    onBackground: string;
-    backgroundContainer: string;
-    onBackgroundContainer: string;
-    surface: string;
-    onSurface: string;
 
+    surface: string;
     surfaceVariant: string;
-    onSurfaceVariant: string; 
+    background: string;
+    transparent: string;
+
+    onPrimary: string;
+    onPrimaryContainer: string;
+    onSecondary: string;
+    onSecondaryContainer: string;
+    onTertiary: string;
+    onTertiaryContainer: string;
+
+    onSurface: string;
+    onSurfaceVariant: string;
+    onBackground: string;
 
     outline: string;
-    
+
     danger: string;
     onDanger: string;
     dangerContainer: string;
@@ -57,7 +57,7 @@ export default interface ThemeInterface {
     onDisabledContainer: string;
     info: string;
     infoContainer: string;
-    onInfoContainer: string; 
+    onInfoContainer: string;
     onInfo: string;
   };
 }

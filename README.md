@@ -129,9 +129,6 @@ const customTheme = {
         background: '#F6F8FC',
         onBackground: "#242526",
 
-        backgroundContainer: '#F6F8FC',
-        onBackgroundContainer: "#242526",
-
         surface: '#FFFFFF',
         onSurface: "#242526",
 
@@ -205,9 +202,16 @@ Apply text styles to text
 - `textShadow`
 - `lineThrough`
 
+### Text Alignment
+Apply text alignment
+- `textCenter`
+- `textLeft`
+- `textRight`
+
+
 ### Text Example
 ```jsx
-<Text h1 italic>
+<Text h1 italic textCenter>
   H1 Italic Example
 </Text>
 ```
@@ -323,29 +327,37 @@ Apply margin based on theme unit x 4
 - `marginV4x` (Vertical)
 - `marginH4x` (Horizontal)
 
+### Flex
+Apply display flex and flex number
+- `flex`
+- `flex2`
+- `flex3`
+- `flex4`
+- `flex5`
 
-// Flex directions
-row
-rowReverse
-column
 
-// 100% Width
-width100
+### Flex Directions
+Apply flex direction
+- `row`
+- `rowReverse`
+- `column`
+- `columnReverse`
 
-// Flex number
-flex
-flex2
-flex3
-flex4
-flex5
+### Width
+Apply width
+- `width100`
 
-// Flex Positioning
+### Flex Positioning
+Apply flex positioning
+- `center`
+- `centerV`
+- `centerH`
+- `right`
+- `left`
+
+# TODO - Document Flex Spacing
+```
 spaceEvenly
-center
-centerV
-centerH
-right
-left
 centerSelf
 rightAlign
 leftAlign
@@ -354,56 +366,131 @@ bottom
 topAlign
 bottomAlign
 flexWrap
+```
 
-// Text Alignment
-textCenter
-textLeft
-textRight
+### Theme Colors
+Apply background & Text colors
 
-// Background Colors
-transparent
-primary
-primaryContainer
-secondary
-secondaryContainer
-tertiary
-tertiaryContainer
-danger
-dangerContainer
-warning
-warningContainer
-success
-successContainer
-disabled
-disabledContainer
-info
-infoContainer
-surface
-surfaceVariant
-background
-backgroundContainer
+**Theme Background Colors**
+- `primary`
+- `primaryContainer`
+- `secondary`
+- `secondaryContainer`
+- `tertiary`
+- `tertiaryContainer`
+- `surface`
+- `surfaceVariant`
+- `background`
+- `transparent`
 
-// Text Colors
-onPrimary
-onPrimaryContainer
-onSecondary
-onSecondaryContainer
-onTertiary
-onTertiaryContainer
-onDanger
-onDangerContainer
-onWarning
-onWarningContainer
-onSuccess
-onSuccessContainer
-onDisabled
-onDisabledContainer
-onInfo
-onInfoContainer
-onSurface
-onsurfaceVariant
-onBackground
-onBackgroundContainer
+**Theme Text Colors**
+- `onPrimary`
+- `onPrimaryContainer`
+- `onSecondary`
+- `onSecondaryContainer`
+- `onTertiary`
+- `onTertiaryContainer`
+- `onSurface`
+- `onSurfaceVariant`
+- `onBackground`
+
+
+```
+const theme = {
+  colors: {
+    primary: '#FFFFFF',
+    primaryContainer: '#F6F8FC',
+    secondary: '#D6E2FB',
+    secondaryContainer: '#EBF1FA',
+    tertiary: '#C7DAFC',
+    tertiaryContainer: '#F3F6FB',
+    surface: '#FFFFFF',
+    surfaceVariant: '#EFEFEF',
+    background: '#F6F8FC',
+
+    onPrimary: '#242526,
+    onPrimaryContainer: '#242526,
+    onSecondary: '#242526,
+    onSecondaryContainer: '#242526,
+    onTertiary: '#242526,
+    onTertiaryContainer: '#242526, 
+    onSurface: '#242526',
+    onSurfaceVariant: '#242526',
+    onBackground: '#242526',
+  }
+}
+```
+
+**Semantic Background Colors**
+- `info`
+- `infoContainer`
+- `success`
+- `successContainer`
+- `warning`
+- `warningContainer`
+- `danger`
+- `dangerContainer`
+- `disabled`
+- `disabledContainer`
+
+**Semantic Text Colors**
+- `onInfo`
+- `onInfoContainer`
+- `onSuccess`
+- `onSuccessContainer`
+- `onWarning`
+- `onWarningContainer`
+- `onDanger`
+- `onDangerContainer`
+- `onDisabled`
+- `onDisabledContainer`
+
+```
+const theme = {
+  colors: {
+    info: '#038aff',
+    infoContainer: '#89c4f4',
+    success: '#66cc99',
+    successContainer: '#c8f7c5',
+    warning: "#f9b42d",
+    warningContainer: '#fbc093',
+    danger: '#ff4c30',
+    dangerContainer: '#f1a9a0',
+    disabled: 'rgba(0,0,0, 0.05)',
+    disabledContainer: '#EFEFEF',
+
+    onInfo: '#FFFFFF',
+    onInfoContainer: '#FFFFFF',    
+    onSuccess: '#FFFFFF',
+    onSuccessContainer: '#242526',
+    onWarning: '#FFFFFF',
+    onWarningContainer: '#242526',
+    onDanger: '#FFFFFF',
+    onDangerContainer: '#FFFFFF',
+    onDisabled: 'rgba(0,0,0, 0.35)',
+    onDisabledContainer: 'rgba(0,0,0, 0.35)',
+  }
+}
+```
+
+### Coloring example
+```jsx
+// Card example with warning text at the bottom
+<View flex background padding>
+  <View surface rounded padding elevated>
+    <Text h1 onSurface>
+      This is some information on a card!
+    </Text>
+
+    <View warning padding rounded margin>
+      <Text body onWarning>
+        This is some warning text!
+      </Text>
+    </View>
+  </View>
+</View>
+```
+
 ```
 src/components/ActivityIndicator
 src/components/BooleanInput

@@ -38,9 +38,6 @@ const theme: ThemeInterface = {
     background: '#1C1B1F',
     onBackground: '#E6E1E5',
 
-    backgroundContainer: '#EFEFEF',
-    onBackgroundContainer: '#EEEEEE',
-
     surface: '#25242A',
     onSurface: '#E6E1E5',
 
