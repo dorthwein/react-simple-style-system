@@ -21,11 +21,11 @@ export default interface StyleModifiersInterface
   roundedB?: boolean;
   roundedR?: boolean;
   roundedL?: boolean;
-  outlined?: boolean;
-  outlinedT?: boolean;
-  outlinedB?: boolean;
-  outlinedR?: boolean;
-  outlinedL?: boolean;
+  outline?: boolean;
+  outlineT?: boolean;
+  outlineB?: boolean;
+  outlineR?: boolean;
+  outlineL?: boolean;
 
   thin?: boolean;
   bold?: boolean;

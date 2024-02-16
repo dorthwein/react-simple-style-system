@@ -33,27 +33,27 @@ const getModifierStyles = (theme: ThemeInterface) => {
       borderBottomLeftRadius: sizes.roundedRadius,
     },
 
-    outlined: {
+    outline: {
       borderWidth: sizes.hairline,
       borderColor: colors.outline,
       borderStyle: 'solid',
     },
-    outlinedT: {
+    outlineT: {
       borderTopWidth: sizes.hairline,
       borderTopColor: colors.outline,
       borderStyle: 'solid',
     },
-    outlinedB: {
+    outlineB: {
       borderBottomWidth: sizes.hairline,
       borderBottomColor: colors.outline,
       borderStyle: 'solid',
     },
-    outlinedR: {
+    outlineR: {
       borderRightWidth: sizes.hairline,
       borderRightColor: colors.outline,
       borderStyle: 'solid',
     },
-    outlinedL: {
+    outlineL: {
       borderLeftWidth: sizes.hairline,
       borderLeftColor: colors.outline,
       borderStyle: 'solid',

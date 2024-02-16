@@ -91,7 +91,7 @@ const SelectOption = (props: SelectOptionInterface) => {
   const style = {width: '48%'};
   return (
     <Pressable
-      outlined
+      outline
       style={style}
       onPress={onPress}
       marginR

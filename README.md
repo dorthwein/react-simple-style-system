@@ -174,102 +174,155 @@ const customTheme = {
 
 ```
 
-### Complete list of props
+## Applying Styles
+
+### Typography
+Apply fontSize to text
+- `h1`
+- `h2`
+- `h3`
+- `body`
+- `caption`
+- `label`
+
+```
+const theme = { 
+  sizes: { 
+    h1: 32,
+    h2: 24,
+    h3: 18,
+    body: 14,
+    caption: 12,
+    label: 14,
+  } 
+}
+```
+### Text Styles
+Apply text styles to text
+- `thin`
+- `bold`
+- `italic`
+- `textShadow`
+- `lineThrough`
+
+### Text Example
 ```jsx
-// Typography
-h1
-h2
-h3
-body
-caption
-label
-textShadow
+<Text h1 italic>
+  H1 Italic Example
+</Text>
+```
 
-// Text styles
-thin
-bold
-italic
-lineThrough
+### Border Radius
+Apply border radius based on theme rounded radius
+- `rounded` (All)
+- `roundedT` (Top)
+- `roundedB` (Bottom)
+- `roundedR` (Right)
+- `roundedL` (Left)
+```
+const theme = { sizes: { roundedRadius: 8 } } 
+```
 
-// Border Radius
-rounded
-roundedT
-roundedB
-roundedR
-roundedL
+### Border Outline
+Apply border outline
 
-// Border Outline
-outlined
-outlinedT
-outlinedB
-outlinedR
-outlinedL
+- `outline`   (All)
+- `outlineT`  (Top)
+- `outlineB`  (Bottom)
+- `outlineR`  (Right)
+- `outlineL`  (Left)
 
-// Applies padding based on theme { sizes: { unit: 4 } }
-padding
-paddingT
-paddingB
-paddingR
-paddingL
-paddingV
-paddingH
+### Elevation
+Apply elevation shadow effect
+- `elevated`
 
-padding2x
-paddingT2x
-paddingB2x
-paddingR2x
-paddingL2x
-paddingV2x
-paddingH2x
+### Padding
+Apply padding based on theme unit 
+- `padding` (All)
+- `paddingT` (Top)
+- `paddingB` (Bottom)
+- `paddingR` (Right)
+- `paddingL` (Left)
+- `paddingV` (Vertical)
+- `paddingH` (Horizontal)
+```
+const theme = { sizes: { unit: 4 } };
+```
 
-padding3x
-paddingT3x
-paddingB3x
-paddingR3x
-paddingL3x
-paddingV3x
-paddingH3x
+### Padding2x
+Apply padding based on theme unit x 2
+- `padding2x` (All)
+- `paddingT2x` (Top)
+- `paddingB2x` (Bottom)
+- `paddingR2x` (Right)
+- `paddingL2x` (Left)
+- `paddingV2x` (Vertical)
+- `paddingH2x` (Horizontal)
 
-padding4x
-paddingT4x
-paddingB4x
-paddingR4x
-paddingL4x
-paddingV4x
-paddingH4x
+### Padding3x
+Apply padding based on theme unit x 3
+- `padding3x` (All)
+- `paddingT3x` (Top)
+- `paddingB3x` (Bottom)
+- `paddingR3x` (Right)
+- `paddingL3x` (Left)
+- `paddingV3x` (Vertical)
+- `paddingH3x` (Horizontal)
 
-// Applies margin based on theme { sizes: { unit: 4 } }
-margin
-marginT
-marginB
-marginR
-marginL
-marginH
-marginV
+### Padding 4x
+Apply padding based on theme unit x 4
+- `padding4x` (All)
+- `paddingT4x` (Top)
+- `paddingB4x` (Bottom)
+- `paddingR4x` (Right)
+- `paddingL4x` (Left)
+- `paddingV4x` (Vertical)
+- `paddingH4x` (Horizontal)
 
-margin2x
-marginV2x
-marginH2x
-marginT2x
-marginB2x
-marginR2x
-marginL2x
 
-margin3x
-marginV3x
-marginH3x
-marginT3x
-marginB3x
-marginR3x
-marginL3x
+### Margin
+Apply margin based on theme unit 
+- `margin` (All)
+- `marginT` (Top)
+- `marginB` (Bottom)
+- `marginR` (Right)
+- `marginL` (Left)
+- `marginV` (Vertical)
+- `marginH` (Horizontal)
+```
+const theme = { sizes: { unit: 4 } };
+```
 
-margin4x
-marginV4x
-marginH4x
-marginT4x
-marginB4x
-marginR4x
-marginL4x
+### Margin2x
+Apply margin based on theme unit x 2
+- `margin2x` (All)
+- `marginT2x` (Top)
+- `marginB2x` (Bottom)
+- `marginR2x` (Right)
+- `marginL2x` (Left)
+- `marginV2x` (Vertical)
+- `marginH2x` (Horizontal)
+
+### Margin3x
+Apply margin based on theme unit x 3
+- `margin3x` (All)
+- `marginT3x` (Top)
+- `marginB3x` (Bottom)
+- `marginR3x` (Right)
+- `marginL3x` (Left)
+- `marginV3x` (Vertical)
+- `marginH3x` (Horizontal)
+
+### Margin 4x
+Apply margin based on theme unit x 4
+- `margin4x` (All)
+- `marginT4x` (Top)
+- `marginB4x` (Bottom)
+- `marginR4x` (Right)
+- `marginL4x` (Left)
+- `marginV4x` (Vertical)
+- `marginH4x` (Horizontal)
+
 
 // Flex directions
 row
@@ -301,9 +354,6 @@ bottom
 topAlign
 bottomAlign
 flexWrap
-
-// Elevation
-elevated
 
 // Text Alignment
 textCenter
