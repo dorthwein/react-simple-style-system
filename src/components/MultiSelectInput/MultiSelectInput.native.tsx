@@ -9,7 +9,7 @@ import InputInterface from '../../types/InputInterface';
 import OptionInterface from '../../types/OptionInterface';
 import Icon from '../../components/Icon';
 
-export interface MultiSelectInterface extends InputInterface {
+export interface MultiSelectInputInterface extends InputInterface {
   options?: OptionInterface[];
   optionContainerProps?: StyleModifiersInterface;
   selectedOptionContainerProps?: StyleModifiersInterface;
@@ -18,16 +18,9 @@ export interface MultiSelectInterface extends InputInterface {
   name?: string;
 }
 
-const MultiSelect = (props: MultiSelectInterface) => {
-  // const form = useFormContext();
-
-  // const {name} = form.register(props.name || '', {
-  //   ...(props.config || {}),
-  // });
-
+const MultiSelectInput = (props: MultiSelectInputInterface) => {
   const handleOnChange = (v: string[]): void => {
     let newValue = [...(props.value || [])];
-    // includes(props.value, v))
     if ((props.value || []).indexOf(v) > -1) {
       // Remove value to array
       newValue = newValue.filter(i => i !== v);
@@ -117,4 +110,4 @@ const SelectOption = (props: SelectOptionInterface) => {
   );
 };
 
-export default MultiSelect;
+export default MultiSelectInput;

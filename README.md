@@ -487,23 +487,30 @@ const theme = {
 </View>
 ```
 
-```
-src/components/ActivityIndicator
-src/components/BooleanInput
-src/components/DateTimeInput
-src/components/Error
-src/components/Form
-src/components/Icon
-src/components/InputContainer
-src/components/MultiSelect
-src/components/NumberInput
-src/components/Pressable
-src/components/SafeAreaView
-src/components/ScrollView
-src/components/Select
-src/components/Text
-src/components/TextAreaInput
-src/components/TextInput
-src/components/View
+## Components
+### ReactNative drop in replacements
+- `<View />`
+- `<Text />`
+- `<SafeAreaView />`
+- `<ScrollView />`
+- `<ActivityIndicator />`
+- `<Pressable />`
+- `<Switch />`
+- `<TextInput />`
+
+### UI components
+- `<Error />`
+- `<Icon />`  (Requires https://github.com/oblador/react-native-vector-icons)
+
+### Additional Input components
+- `<DateTimeInput />` (Requires https://github.com/react-native-datetimepicker/datetimepicker)
+- `<NumberInput />`
+- `<MultiSelectInput />`
+- `<SelectInput />`
+- `<TextAreaInput />`
+
+### react-hook-form components
+- `<InputContainer />` (Requires https://react-hook-form.com/)
+- `<Form />` (Requires https://react-hook-form.com/)
 
 ### Why react-simple-style-system

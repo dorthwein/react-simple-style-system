@@ -9,7 +9,7 @@ import OptionInterface from '../../types/OptionInterface';
 
 import Icon from '../../components/Icon';
 
-export interface SelectInterface extends InputInterface {
+export interface SelectInputInterface extends InputInterface {
   allowUndefined?: boolean;
   options: OptionInterface[];
   optionContainerProps?: StyleModifiersInterface;
@@ -19,7 +19,10 @@ export interface SelectInterface extends InputInterface {
   name?: string;
 }
 
-const Select = ({allowUndefined = true, ...props}: SelectInterface) => {
+const SelectInput = ({
+  allowUndefined = true,
+  ...props
+}: SelectInputInterface) => {
   const handleOnChange = (v: string[]): void => {
     if (v === props.value && allowUndefined) {
       props.onChange(undefined);
@@ -32,7 +35,7 @@ const Select = ({allowUndefined = true, ...props}: SelectInterface) => {
 
   (props.options || []).forEach((option: OptionInterface) => {
     options.push(
-      <SelectOption
+      <SelectInputOption
         optionLabelProps={props.optionLabelProps}
         optionContainerProps={props.optionContainerProps}
         selectedOptionLabelProps={props.selectedOptionLabelProps}
@@ -56,7 +59,7 @@ const Select = ({allowUndefined = true, ...props}: SelectInterface) => {
   );
 };
 
-interface SelectOptionInterface {
+interface SelectInputOptionInterface {
   option: OptionInterface;
   value: string | number | undefined;
   onChange: Function;
@@ -66,7 +69,7 @@ interface SelectOptionInterface {
   selectedOptionLabelProps?: StyleModifiersInterface;
 }
 
-const SelectOption = (props: SelectOptionInterface) => {
+const SelectInputOption = (props: SelectInputOptionInterface) => {
   const {value, label, disabled} = props.option;
 
   const onPress = () => {
@@ -113,4 +116,4 @@ const SelectOption = (props: SelectOptionInterface) => {
   );
 };
 
-export default Select;
+export default SelectInput;

@@ -140,8 +140,8 @@ const getModifierStyles = (theme: ThemeInterface) => {
     flex3: {flex: 3},
     flex4: {flex: 4},
     flex5: {flex: 5},
-    flexWrap: {flexWrap: 'wrap'},
 
+    flexWrap: {flexWrap: 'wrap'},
     spaceEvenly: {alignItems: 'space-evenly', justifyContent: 'space-evenly'},
 
     center: {justifyContent: 'center', alignItems: 'center'},

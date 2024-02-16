@@ -7,9 +7,9 @@ import {
 import useStyleModifiers from '../../hooks/useStyleModifiers';
 import InputInterface from '../../types/InputInterface';
 
-export interface BooleanInputInterface extends InputInterface {}
+export interface SwitchInterface extends InputInterface {}
 
-const BooleanInput = (props: BooleanInputInterface) => {
+const Switch = (props: SwitchInterface) => {
   const style = useStyleModifiers(props);
 
   const handleOnChange = (
@@ -26,4 +26,4 @@ const BooleanInput = (props: BooleanInputInterface) => {
   );
 };
 
-export default BooleanInput;
+export default Switch;
