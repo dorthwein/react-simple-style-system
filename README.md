@@ -2,6 +2,8 @@ A small and scalable bearbones styling system using  declaritive properties to a
 
 Much of this project came from dealing with common pitfalls associated with more opinionated UI Libraries that tend to be all or nothing solutions and can lead to dependency hell.
 
+Currently only supports react-native
+
 ## Get Started
 ### Install
 ```
@@ -352,21 +354,15 @@ Apply flex positioning
 - `center`
 - `centerV`
 - `centerH`
+- `top`
+- `bottom`
 - `right`
 - `left`
-
-# TODO - Document Flex Spacing
-```
-spaceEvenly
-centerSelf
-rightAlign
-leftAlign
-top
-bottom
-topAlign
-bottomAlign
-flexWrap
-```
+- `alignSelfCenter`
+- `alignSelfEnd`
+- `alignSelfStart`
+- `spaceEvenly`
+- `flexWrap`
 
 ### Theme Colors
 Apply background & Text colors

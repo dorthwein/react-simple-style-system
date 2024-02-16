@@ -96,6 +96,8 @@ export default interface StyleModifiersInterface
   marginR4x?: boolean;
   marginL4x?: boolean;
 
+  elevated?: boolean;
+
   row?: boolean;
   rowReverse?: boolean;
   column?: boolean;
@@ -108,23 +110,24 @@ export default interface StyleModifiersInterface
   flex4?: boolean;
   flex5?: boolean;
   spaceEvenly?: boolean;
+
   center?: boolean;
   centerV?: boolean;
   centerH?: boolean;
-  elevated?: boolean;
+
+  top?: boolean;
+  bottom?: boolean;
+  right?: boolean;
+  left?: boolean;
+
+  alignSelfCenter?: boolean;
+  alignSelfEnd?: boolean;
+  alignSelfStart?: boolean;
 
   textCenter?: boolean;
   textLeft?: boolean;
   textRight?: boolean;
-  right?: boolean;
-  left?: boolean;
-  centerSelf?: boolean;
-  rightAlign?: boolean;
-  leftAlign?: boolean;
-  top?: boolean;
-  bottom?: boolean;
-  topAlign?: boolean;
-  bottomAlign?: boolean;
+
   flexWrap?: boolean;
 
   transparent?: boolean;

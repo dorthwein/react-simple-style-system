@@ -128,23 +128,38 @@ const getModifierStyles = (theme: ThemeInterface) => {
     marginR4x: {marginRight: sizes.unit * 4},
     marginL4x: {marginLeft: sizes.unit * 4},
 
+    width100: {width: '100%'},
+
     row: {flexDirection: 'row'},
     rowReverse: {flexDirection: 'row-reverse'},
     column: {flexDirection: 'column'},
     columnReverse: {flexDirection: 'column-reverse'},
-
-    width100: {width: '100%'},
 
     flex: {flex: 1},
     flex2: {flex: 2},
     flex3: {flex: 3},
     flex4: {flex: 4},
     flex5: {flex: 5},
+    flexWrap: {flexWrap: 'wrap'},
 
     spaceEvenly: {alignItems: 'space-evenly', justifyContent: 'space-evenly'},
+
     center: {justifyContent: 'center', alignItems: 'center'},
     centerV: {justifyContent: 'center'},
     centerH: {alignItems: 'center'},
+
+    top: {justifyContent: 'flex-start'},
+    bottom: {justifyContent: 'flex-end'},
+    right: {alignItems: 'flex-end'},
+    left: {alignItems: 'flex-start'},
+
+    alignSelfCenter: {alignSelf: 'center'},
+    alignSelfEnd: {justifyContent: 'flex-end'},
+    alignSelfStart: {alignItems: 'flex-start'},
+
+    textCenter: {textAlign: 'center'},
+    textLeft: {textAlign: 'left'},
+    textRight: {textAlign: 'right'},
 
     elevated: {
       boxShadow: '0px 2px 4px 0px #000',
@@ -154,23 +169,6 @@ const getModifierStyles = (theme: ThemeInterface) => {
       shadowRadius: 3,
       shadowOpacity: 0.25,
     },
-
-    textCenter: {textAlign: 'center'},
-    textLeft: {textAlign: 'left'},
-    textRight: {textAlign: 'right'},
-
-    right: {alignSelf: 'flex-end'},
-    left: {alignSelf: 'flex-start'},
-    centerSelf: {alignSelf: 'center'},
-
-    rightAlign: {alignItems: 'flex-end'},
-    leftAlign: {alignItems: 'flex-start'},
-
-    top: {justifyContent: 'flex-start'},
-    bottom: {justifyContent: 'flex-end'},
-    topAlign: {alignItems: 'flex-start'},
-    bottomAlign: {alignItems: 'flex-end'},
-    flexWrap: {flexWrap: 'wrap'},
 
     transparent: {backgroundColor: 'transparent'},
 
