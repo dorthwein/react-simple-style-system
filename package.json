@@ -1,6 +1,6 @@
 {
   "name": "react-simple-style-system",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.2",
   "description": "An extensible simple prop based style system for react/react-native",
   "main": "./lib/index.js",
   "exports": {
@@ -44,11 +44,12 @@
     "react-native"
   ],
   "bugs": {
-    "url": ""
+    "url": "https://github.com/dorthwein/react-simple-style-system/issues"
   },
   "homepage": "",
   "peerDependencies": {
     "@react-native-community/datetimepicker": "*",
+    "dayjs": "*",
     "react": "*",
     "react-hook-form": "*",
     "react-native": "*",

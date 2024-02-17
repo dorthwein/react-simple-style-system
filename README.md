@@ -52,14 +52,30 @@ const App = () => {
           <Text body onSurface>
             A brief description of something
           </Text>
-        </View>				
+        </Card>				
       </View>
     </ThemeContainer>
   )
 }
 ```
+## Hooks
+### useTheme()
+Used to access the current theme's styles, colors, sizes & mode.
 
-### Apply modifiers to a regular component
+**Example** 
+```jsx
+  import { Text } from 'react-native'
+  import {useTheme } from 'react-simple-style-system'
+
+  const CustomInput = (props) => {
+    const { styles, colors, sizes, mode } = useTheme()    
+    return <Text {...props} style={{ color: colors.onSurface, backgroundColor: colors.surface }} />
+  }
+```
+### useStyleModifiers()
+Used to enable modifiers on a given component.  Given a set of modifier props, returns the appropiate styles.  
+
+**Example**
 ```jsx
   import { TextInput } from 'react-native'
   import {useStyleModifiders } from 'react-simple-style-system'
@@ -70,25 +86,16 @@ const App = () => {
   }
 
   const ExampleUsage = (props) => {
-    /* 
-      Component will have theme margin, padding, borderRadius surfaceVariant background color, 
-      and onSurfaceVariant text color applied to it along with the inline style.
-    */
-    return <CustomInput margin padding rounded surfaceVariant onSurfaceVariant style={{ fontSize: 24 }} />
+    return <CustomInput 
+      margin 
+      padding 
+      rounded 
+      surfaceVariant 
+      onSurfaceVariant 
+      style={{ fontSize: 24 }} 
+    />
   }
 ```
-
-### Access the current Theme directly
-```jsx
-  import { Text } from 'react-native'
-  import {useTheme } from 'react-simple-style-system'
-
-  const CustomInput = (props) => {
-    const { styles, colors, sizes, mode } = useTheme()    
-    return <Text {...props} style={{ color: colors.onSurface, backgroundColor: colors.surface }} />
-  }
-```
-
 
 ### Create a custom theme
 ```jsx
@@ -174,7 +181,6 @@ const customTheme = {
 ```
 
 ## Applying Styles
-
 ### Typography
 Apply fontSize to text
 - `h1`
@@ -495,22 +501,22 @@ const theme = {
 - `<ScrollView />`
 - `<ActivityIndicator />`
 - `<Pressable />`
-- `<Switch />`
-- `<TextInput />`
 
 ### UI components
 - `<Error />`
 - `<Icon />`  (Requires https://github.com/oblador/react-native-vector-icons)
 
 ### Additional Input components
-- `<DateTimeInput />` (Requires https://github.com/react-native-datetimepicker/datetimepicker)
+Form inputs 
+- `<DateTimeInput />` (Requires https://github.com/react-native-datetimepicker/datetimepicker & https://day.js.org/)
 - `<NumberInput />`
 - `<MultiSelectInput />`
 - `<SelectInput />`
 - `<TextAreaInput />`
+- `<Switch />`
+- `<TextInput />`
+
 
 ### react-hook-form components
 - `<InputContainer />` (Requires https://react-hook-form.com/)
 - `<Form />` (Requires https://react-hook-form.com/)
-
-### Why react-simple-style-system
