@@ -1,2 +1,2 @@
-'use client'
-export { default } from './ActivityIndicator'; 
+'use client';
+export {default} from './ActivityIndicator';

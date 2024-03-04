@@ -4,6 +4,19 @@ Much of this project came from dealing with common pitfalls associated with more
 
 Currently only supports react-native
 
+## Contributing
+Use https://github.com/wix-incubator/wml
+
+### Add local project
+```
+wml add ~/my-package ~/main-project/node_modules/my-package
+```
+
+### Start wml
+```
+wml start
+```
+
 ## Get Started
 ### Install
 ```

@@ -4,11 +4,8 @@
   "description": "An extensible simple prop based style system for react/react-native",
   "main": "./lib/index.js",
   "exports": {
-    ".": {
-      "node": "./lib/index.js",
-      "import": "./lib/index.js",
-      "default": "./lib/index.js"
-    }
+    ".": "./lib/index.js",
+    "./ActivityIndicator": "./lib/components/ActivityIndicator/index.js"
   },
   "files": [
     "./lib/**/*"
