@@ -1,6 +1,6 @@
 {
   "name": "react-simple-style-system",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0-rc.3",
   "description": "An extensible simple prop based style system for react/react-native",
   "main": "./lib/index.js",
   "exports": {
